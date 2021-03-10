@@ -135,7 +135,7 @@ a {
   grid-column-start: 3;
   grid-column-end: 4;
   justify-self: end;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .mobile__nav-slide {
@@ -150,7 +150,7 @@ a {
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   padding: 0;
-  z-index: 9;
+  z-index: 999;
 }
 
 .mobile__nav-slide ul {
@@ -231,7 +231,7 @@ a {
 }
 
 .viedo__container-youtube {
-  width: 45%;
+  width: 35rem;
   height: auto;
   background-color: rgba(1, 31, 73, 0.4);
   border-radius: 34px;
@@ -246,7 +246,7 @@ a {
 
 .video__container section {
   padding-left: 2.31rem;
-  width: 40%;
+  width: 35rem;
   background-color: rgba(1, 31, 73, 0.4);
   border-radius: 34px;
   display: flex;
