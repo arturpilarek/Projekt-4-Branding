@@ -19,7 +19,6 @@ p {
 .home {
   background-color: #011f49;
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -195,13 +194,13 @@ a {
   height: calc(100vh - 6.5rem);
   color: white;
   background-image: url(../assets/baggrund.png);
-  background-position: initial;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Poppins";
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  font-size: 1rem;
 }
 
 .background__text-position {
@@ -232,7 +231,7 @@ a {
 }
 
 .viedo__container-youtube {
-  width: 40%;
+  width: 45%;
   height: auto;
   background-color: rgba(1, 31, 73, 0.4);
   border-radius: 34px;
@@ -248,28 +247,27 @@ a {
 .video__container section {
   padding-left: 2.31rem;
   width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
   background-color: rgba(1, 31, 73, 0.4);
   border-radius: 34px;
-  padding: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .video__container h1 {
   font-size: 1.6rem;
-  max-width: 100%;
   padding-bottom: 1rem;
   font-family: "Poppins";
   font-weight: 600;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  line-height: initial;
 }
 
 .video__container p {
   font-size: 1.1rem;
-  width: calc(80ch - 15vw);
+  display: inline-block;
+  max-width: 90%;
   line-height: 1.5em;
   font-weight: 500;
 }
@@ -299,6 +297,9 @@ a {
 .kompetencer {
   background-color: #011f49;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .tysk-polsk__title-section {
@@ -327,7 +328,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 65vh;
 }
 
 .tyskland {
@@ -338,7 +338,7 @@ a {
   background-color: #55407d;
   padding: 2em;
   border-radius: 34px;
-  width: 27%;
+  width: calc(30rem - 0.8vw);
   height: 100%;
 }
 
@@ -357,11 +357,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  position: absolute;
-  margin-top: auto;
-  top: 85%;
-  right: 0;
-  left: 0;
 }
 
 .kompetencer a {
@@ -390,17 +385,14 @@ a {
 .referencer {
   background-color: #55407d;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .referencer h2 {
   text-align: center;
   display: block;
-  position: absolute;
-  top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
   font-weight: 800;
   font-size: 3rem;
   text-transform: uppercase;
@@ -475,7 +467,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-bottom: 10rem;
+  height: calc(100% - 9rem);
 }
 
 .kontakt__wrapper article {
@@ -532,6 +524,7 @@ footer {
   background-color: #55407d;
   width: 100vw;
   height: 9rem;
+  margin-top: auto;
 }
 
 .footer__wrapper {
@@ -580,13 +573,18 @@ footer {
   }
 
   .video__container p {
-    width: calc(60ch - 15vw);
+    width: calc(60ch - 12vw);
   }
 
-  /* .tysk-polsk__wrapper article {
-    width: 35%;
-    height: 30vh;
-  } */
+  .background__banner h2,
+  .background__banner span {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  .video__container h1 {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -599,7 +597,7 @@ footer {
   }
 
   .viedo__container-youtube {
-    width: 34rem;
+    width: 40%;
   }
 
   .video__container p {
@@ -612,108 +610,13 @@ footer {
     font-size: 10px;
   }
 
-  .desktop__nav {
-    display: none;
-  }
-
-  .mobile__nav {
-    display: flex;
-    padding-right: 2em;
-    padding-left: 2em;
-  }
-
-  .background__banner {
-    position: absolute;
-    top: 6.5rem;
-    width: 100vw;
-    height: calc(28vh - 6.5rem);
-    color: white;
-    background-image: url(../assets/baggrund.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Poppins";
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-  }
-
-  .background__text-position {
-    position: initial;
-    top: 0;
-    margin-left: 0;
-    margin-top: 4rem;
-    text-align: center;
-  }
-
-  .background__banner h2,
-  .background__banner span {
-    font-size: 2.2rem;
-    font-weight: 800;
-  }
-
-  .background__banner span {
-    color: #ffbd59;
-  }
-
-  .video__container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: initial;
-    top: 27.9%;
-    height: 73vh;
-  }
-
-  .video__container h1 {
-    font-size: 2.3rem;
-    padding: 1.5rem 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .video__container section {
-    padding-left: 0;
-    width: 90vw;
-    background-color: #011f49;
-    border-radius: 0;
-    padding: 2rem 0;
-  }
-
-  .viedo__container-youtube {
-    width: 90%;
-    height: auto;
-    margin-bottom: 4rem;
-  }
-
-  .mobile__button {
-    display: inline-block;
-    margin-top: 0;
-    font-size: 2rem;
-    padding: 10px 30px;
-  }
-
-  .desktop__button {
-    display: none;
-  }
-
-  .video__container p {
-    font-size: 1.7rem;
-    line-height: 1.5em;
-    font-weight: 500;
-    width: 100%;
-  }
-
   .referencer__item img {
     width: 19em;
   }
 
   .kontakt__wrapper {
-    transform: scale(1.1);
-  }
-
-  .kontakt__wrapper {
     flex-direction: column;
-    height: 80%;
-    gap: 1.4rem;
+    height: calc(100% - 11rem);
   }
 
   .kontakt__wrapper article {
@@ -792,15 +695,79 @@ footer {
     font-size: 8px;
   }
 
-  .tysk-polsk__title-section {
-    top: 5vh;
+  .desktop__nav {
+    display: none;
+  }
+
+  .mobile__nav {
+    display: flex;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .background__banner {
+    width: 100vw;
+    height: calc(28vh - 6.5rem);
+    z-index: 666;
+  }
+
+  .background__text-position {
+    position: initial;
+    margin-left: 0;
+    margin-top: 4rem;
     text-align: center;
+  }
+
+  .background__banner h2,
+  .background__banner span {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  .background__banner span {
+    color: #ffbd59;
+  }
+
+  .video__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    height: 60%;
+  }
+
+  .video__container h1 {
+    font-size: 2.3rem;
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: initial;
+  }
+
+  .video__container section {
+    padding-left: 0;
+    width: 90vw;
+    background-color: #011f49;
+    border-radius: 0;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .viedo__container-youtube {
+    width: 90%;
+    height: auto;
+  }
+
+  .video__container p {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    width: 100%;
   }
 
   .tysk-polsk__wrapper {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
   }
 
   .tysk-polsk__wrapper article {
@@ -822,11 +789,6 @@ footer {
 
   .tyskland {
     margin-right: 0;
-    margin-bottom: 3em;
-  }
-
-  .tysk-polsk__wrapper article {
-    width: 60%;
   }
 
   .tysk-polsk__wrapper article h2 {
@@ -860,9 +822,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
-    position: absolute;
-    top: 13%;
   }
 
   .referencer__item-card-wrapper {
