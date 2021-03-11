@@ -1,5 +1,5 @@
 .background__banner {
-  background-image: url(../assets/kompetencer_faldskærm.PNG);
+  background-image: url(../assets/kompetencer_faldskaerm.PNG);
   width: 100vw;
   height: 30vh;
   background-position: center;
@@ -94,6 +94,7 @@
   width: 50%;
   height: auto;
   border-radius: 30px;
+  min-width: 50%;
 }
 
 .card h2 {

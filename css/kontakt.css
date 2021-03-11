@@ -59,6 +59,10 @@ main {
   justify-content: flex-start;
   align-items: center;
 }
+/* 
+.adress h2 {
+  align-self: auto;
+} */
 
 main p {
   font-size: 1.4rem;
