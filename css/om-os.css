@@ -1,5 +1,3 @@
-/* Background */
-
 .background__banner {
   background-image: url(../assets/followthewhiterabbit.png);
   width: 100vw;
@@ -21,7 +19,7 @@
   text-transform: uppercase;
 }
 
-.kompetencer-cards {
+.om-os__cards {
   display: flex;
   flex-direction: column;
   align-items: center;

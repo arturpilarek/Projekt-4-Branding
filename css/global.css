@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -27,7 +28,7 @@ p {
 
 header li {
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -190,7 +191,7 @@ footer {
   left: 0;
   background-color: #55407d;
   width: 100vw;
-  height: 6rem;
+  height: 9rem;
   color: white;
 }
 
@@ -208,11 +209,15 @@ main {
 }
 
 .footer__wrapper img {
-  width: 4.3rem;
+  width: 6.5rem;
   height: auto;
 }
 
 .footer__icons i {
+  font-size: 2rem;
+}
+
+footer p {
   font-size: 1.4rem;
 }
 
@@ -224,8 +229,8 @@ main {
   position: absolute;
   right: 0;
   background-color: #011f49;
-  padding: 0.4rem;
-  border-radius: 100%;
+  padding: 0.7rem;
+  border-radius: 50%;
   margin-right: 0.4rem;
   margin-top: 0.4rem;
   display: flex;
@@ -234,7 +239,7 @@ main {
 }
 
 .footer__link-start i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1200px) {

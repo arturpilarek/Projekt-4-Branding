@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.kompetencer-cards {
+.blog-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,14 +48,6 @@
 .card a {
   color: #ffbd59;
 }
-
-/* .card__special ul,
-.card__special p:not(:first-of-type) {
-  font-size: calc(0.7rem + 0.6vw);
-  padding-top: 1em;
-  letter-spacing: 0.05em;
-  line-height: 1.6em;
-} */
 
 .card h2 {
   font-size: 2.3rem;

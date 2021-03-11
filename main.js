@@ -8,3 +8,7 @@ const navSlide = () => {
 }
 
 navSlide()
+
+console.log(
+  "Reference til fullpage.js:https://github.com/alvarotrigo/fullPage.js/"
+)
